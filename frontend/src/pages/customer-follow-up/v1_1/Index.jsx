@@ -15,10 +15,9 @@ export default function App() {
   const closeModal = () => setActiveModal(null);
 
   return (
-    <>
+    <div className="app-container shadow-xl bg-white min-h-screen flex flex-col">
       <Header openModal={openModal} />
-      
-      {/* Main Info Card */}
+
       <div className="p-4 bg-white mt-1 border-b border-gray-100 shadow-sm relative z-10">
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2">
@@ -37,7 +36,6 @@ export default function App() {
         <StatsBar openModal={openModal} />
       </div>
 
-      {/* Navigation Tabs */}
       <div className="flex px-4 py-3 gap-6 overflow-x-auto whitespace-nowrap bg-white border-b border-gray-100 text-gray-500">
         <span className="text-black font-bold border-b-2 border-teal-500 pb-1 relative">画像 <div className="absolute w-4 h-1 bg-teal-500 bottom-0 left-1/2 -translate-x-1/2 rounded-full"></div></span>
         <span>轨迹</span>
@@ -55,11 +53,11 @@ export default function App() {
           </div>
           <div className="border-t border-dashed border-gray-300 my-4"></div>
         </div>
-        
+
         <ActivitiesInfo openModal={openModal} />
       </div>
 
       <Modals activeModal={activeModal} closeModal={closeModal} />
-    </>
+    </div>
   );
 }

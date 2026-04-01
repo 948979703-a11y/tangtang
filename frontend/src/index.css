@@ -28,4 +28,13 @@
     background-color: #cbd5e1;
     border-radius: 4px;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
