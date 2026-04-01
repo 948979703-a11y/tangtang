@@ -1,15 +1,33 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "原型设计走廊"
+			}
+		},
+		{
+			"path": "pages/customer/index",
 			"style": {
 				"navigationBarTitleText": "客户跟进 v1.1"
+			}
+		},
+		{
+			"path": "pages/mini-form/index",
+			"style": {
+				"navigationBarTitleText": "小表单 (建设中)"
+			}
+		},
+		{
+			"path": "pages/referral/index",
+			"style": {
+				"navigationBarTitleText": "老带新 (建设中)"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "招生工具平台",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
