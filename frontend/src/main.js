@@ -1,3 +1,4 @@
+import 'virtual:uno.css'
 import {
 	createSSRApp
 } from "vue";
