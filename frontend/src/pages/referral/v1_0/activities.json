@@ -1,7 +1,0 @@
-[
-  { "id": 1, "dept": "primary", "image": "/assets/activity_primary.png" },
-  { "id": 2, "dept": "primary", "image": "/assets/activity_primary.png" },
-  { "id": 3, "dept": "middle", "image": "/assets/activity_middle.png" },
-  { "id": 4, "dept": "middle", "image": "/assets/activity_middle.png" },
-  { "id": 5, "dept": "high", "image": "/assets/activity_high.png" }
-]
