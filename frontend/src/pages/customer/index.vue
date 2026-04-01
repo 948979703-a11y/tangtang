@@ -81,6 +81,15 @@
            <view class="grid-item" @click="showToast('编辑考证录入')">考级考证: 无</view>
            <view class="grid-item" @click="showToast('编辑辅导经历')">辅导经历: 新东方</view>
         </view>
+
+        <!-- 分层测模块 (恢复v1.1遗留) -->
+        <view class="level-test-box mt-2" @click="showToast('进入分层测详情')">
+          <view class="test-header">
+            <text class="test-title">分层测情况 (v1.1遗留)</text>
+            <text class="test-status highlight-blue">已测 2 次</text>
+          </view>
+          <text class="test-desc">最新：初一数学秋季基础测 - 综合评级 B+</text>
+        </view>
       </view>
 
       <!-- 活跃商机 和 添加员工按钮 -->
@@ -376,6 +385,12 @@ page {
   display: block; width: 100%; text-align: center; color: #aaa; margin-top: 40px; font-size: 14px;
 }
 
-// 隐藏滚动条
-::-webkit-scrollbar { display: none; }
+.highlight-blue { font-weight: bold; color: #1890ff; }
+.level-test-box {
+  background: #f0f7ff; border: 1px solid #cce4ff; border-radius: 6px; padding: 10px;
+}
+.test-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.test-title { font-size: 14px; font-weight: 500; color: #222; }
+.test-status { font-size: 13px; }
+.test-desc { font-size: 12px; color: #666; display: block; }
 </style>
