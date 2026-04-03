@@ -10,7 +10,7 @@ import CheckInV1_0 from './pages/check-in/v1_0/Index';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/tangtang">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/customer/v1.1" element={<CustomerV1_1 />} />
