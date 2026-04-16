@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function GroupBuy() {
   const [pageView, setPageView] = useState('course'); // 'course' or 'group_detail'
   const [role, setRole] = useState('leader'); // 'leader' or 'member'
   const [status, setStatus] = useState('pending'); // 'pending' or 'success'
   const [hasJoined, setHasJoined] = useState(false);
-  const [points, setPoints] = useState(0);
   const [sharePoints, setSharePoints] = useState(0);
   const [activeTab, setActiveTab] = useState('detail');
 
