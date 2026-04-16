@@ -91,8 +91,29 @@ description: 在需求分析与原型交互确认完成后，根据已确认方�
 
 ### 4. 输出格式与存储
 - 将上述 PRD 以 **Markdown** 格式输出，层级清晰，表格、代码块规范使用。
-- 若用户明确项目目录，可将内容保存为 `docs/PRD_[功能名称]_[日期].md`；否则仅输出内容，提示用户可自行保存。
+- 向用户确认项目目录，协商后将内容保存为 `docs/projects/[project-name]/[PRD文件中文名].md`，其中项目目录名与 `src` 目录结构保持一致。
 - 如果生成了独立的 HTML 流程图文件，同时输出该文件路径，并在 PRD 中添加引用链接。
+
+### 5. 原型发布与公网链接回填（必要步骤）
+PRD 输出完成后，必须执行以下流程，确保原型对全员可公网访问：
+
+1. **构建前端**：进入 `frontend/` 目录，执行以下命令构建最新版本：
+   ```bash
+   PATH="/usr/local/bin:$PATH" /usr/local/bin/npm run build
+   ```
+2. **部署到 Netlify**：使用 `netlify-cli` 直接推送 `dist` 目录：
+   ```bash
+   PATH="/usr/local/bin:$PATH" npx --yes netlify-cli deploy --prod \
+     --dir=frontend/dist \
+     --site=33918e24-88a8-4016-834b-134ecd7e45a3
+   ```
+   - **Site ID** 固定为 `33918e24-88a8-4016-834b-134ecd7e45a3`（可在 `.netlify/state.json` 中查阅）。
+   - 和运行目录为 **项目根目录**（`my-project/`）。
+   - 部署成功后，命令行会输出 `Deployed to production URL: https://tangtang-prototype.netlify.app`。
+3. **回填 PRD 链接**：将 PRD 文档内「公网测试环境演示地址」先占位符替换为真实可访问的 URL：
+   - **入口首页**：`https://tangtang-prototype.netlify.app/`
+   - **功能页**：`https://tangtang-prototype.netlify.app/[path]（如 /small-class/v1.0/group-buy）`
+4. **Git 入库**：将新 `dist` 内容强制提交进仓库（`git add -f frontend/dist/ && git commit && git push`）确保与代码源一致。
 
 ### 5. 页面交互流程图图片生成的技术细节（当有截图时）
 - **依赖**：自动安装 `Pillow`（若不存在）。
