@@ -47,26 +47,15 @@ export default function Home() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold text-gray-500 mb-3 ml-1 uppercase tracking-widest">其他项目</h2>
+          <h2 className="text-sm font-bold text-gray-500 mb-3 ml-1 uppercase tracking-widest">小课堂 (Small Class)</h2>
           <div className="space-y-3">
-            <Link to="/mini-form/v1.0" className="block bg-white p-4 rounded-xl shadow-sm border border-purple-100 hover:shadow-md transition-shadow">
+            <Link to="/small-class/v1.0/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-orange-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+              <div className="absolute right-0 top-0 bottom-0 w-2 bg-orange-500 group-hover:w-3 transition-all"></div>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-800">小表单 v1.0</span>
-                <span className="bg-purple-50 text-purple-600 text-xs px-2 py-1 rounded font-bold">老师端数据</span>
+                <span className="font-bold text-gray-800 text-lg">v1.0 拼团与积分</span>
+                <span className="bg-orange-50 text-orange-600 text-xs px-2 py-1 rounded font-bold">已闭环</span>
               </div>
-              <p className="text-gray-500 text-xs mt-1">数据总览 / 单表单明细 · 支持点击线索查看线索明细</p>
-            </Link>
-            <Link to="/trial-class/v1.0" className="block bg-white p-4 rounded-xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-800">体验课 v1.0</span>
-                <span className="bg-amber-50 text-amber-600 text-xs px-2 py-1 rounded font-bold">待完善</span>
-              </div>
-            </Link>
-            <Link to="/check-in/v1.0" className="block bg-white p-4 rounded-xl shadow-sm border border-cyan-100 hover:shadow-md transition-shadow">
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-800">打卡 v1.0</span>
-                <span className="bg-cyan-50 text-cyan-600 text-xs px-2 py-1 rounded font-bold">待完善</span>
-              </div>
+              <p className="text-gray-500 text-xs mt-1">团长/团员积分动态展示机制，以及成功/失败/满员等各种边界分支状态处理</p>
             </Link>
           </div>
         </div>
