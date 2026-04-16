@@ -251,7 +251,7 @@ export default function GroupBuy() {
                 ) : (
                   !hasJoined ? (
                     <button onClick={handleJoin} className="w-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-medium py-3 rounded-full shadow hover:shadow-md transition-shadow">
-                      我要参团（参团/成团拿两份）
+                      参团立得 5 积分
                     </button>
                   ) : (
                     <div className="w-full flex gap-3">
