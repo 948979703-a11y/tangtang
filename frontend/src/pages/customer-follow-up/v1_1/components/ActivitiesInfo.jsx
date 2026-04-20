@@ -57,6 +57,7 @@ function YearSection({ group }) {
 
 export default function ActivitiesInfo({ openModal }) {
   const [placementOpen, setPlacementOpen] = useState(false);
+  const [placementLimit, setPlacementLimit] = useState(2);
   const [referOpen, setReferOpen] = useState(false);
   const [visitOpen, setVisitOpen] = useState(false);
 
@@ -105,9 +106,18 @@ export default function ActivitiesInfo({ openModal }) {
 
             {placementOpen && (
               <div className="border-t border-gray-100 pt-3 mt-3">
-                {placementData.map((group) => (
+                {placementData.slice(0, placementLimit).map((group) => (
                   <YearSection key={group.year} group={group} />
                 ))}
+                
+                {placementData.length > placementLimit && (
+                  <div 
+                    className="text-center py-3 text-teal-500 text-[10px] font-bold cursor-pointer border-t border-gray-50 mt-2 bg-gray-50/50 rounded-b-lg active:bg-gray-100 transition-colors"
+                    onClick={() => setPlacementLimit(placementData.length)}
+                  >
+                    查看更多历史数据 <i className="fa fa-angle-double-down ml-1"></i>
+                  </div>
+                )}
               </div>
             )}
           </div>

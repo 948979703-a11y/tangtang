@@ -36,5 +36,29 @@
         ]
       }
     ]
+  },
+  {
+    "year": "2025秋季",
+    "isLatest": false,
+    "subjects": [
+      {
+        "subject": "数学",
+        "records": [
+          { "score": 62, "level": "好学", "grade": "六年级", "date": "2024.11.10", "reportUrl": "#", "levelColor": "amber" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2025春季",
+    "isLatest": false,
+    "subjects": [
+      {
+        "subject": "英语",
+        "records": [
+          { "score": 70, "level": "好学", "grade": "六年级", "date": "2024.05.20", "reportUrl": "#", "levelColor": "amber" }
+        ]
+      }
+    ]
   }
 ]
