@@ -49,7 +49,7 @@ export default function Home() {
         <div>
           <h2 className="text-sm font-bold text-gray-500 mb-3 ml-1 uppercase tracking-widest">小课堂 (Small Class)</h2>
           <div className="space-y-3">
-            <Link to="/small-class/v1.1/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-orange-200 hover:shadow-md transition-shadow relative overflow-hidden group">
+            <Link to="/small-class/v1-1/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-orange-200 hover:shadow-md transition-shadow relative overflow-hidden group">
               <div className="absolute right-0 top-0 bottom-0 w-2 bg-orange-600 group-hover:w-3 transition-all"></div>
               <div className="flex justify-between items-center">
                 <span className="font-bold text-gray-800 text-lg">v1.1 阶梯拼团奖</span>
