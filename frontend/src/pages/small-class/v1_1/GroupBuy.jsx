@@ -18,7 +18,7 @@ export default function GroupBuy() {
     { name: '5人团', count: 5, price: '¥0.00', leaderPoints: 150, memberPoints: 20, sharePoints: 8, joinPoints: 10 }
   ];
 
-  const currentTier = tiers[selectedTier];
+  const currentTier = tiers[selectedTier] || tiers[0];
 
   // Switch between different mock situations
   const togglePageView = () => setPageView(p => p === 'course' ? 'group_detail' : 'course');
