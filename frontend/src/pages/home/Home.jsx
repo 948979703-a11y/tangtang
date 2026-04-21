@@ -54,22 +54,13 @@ export default function Home() {
         <div>
           <h2 className="text-sm font-bold text-gray-500 mb-3 ml-1 uppercase tracking-widest">小课堂 (Small Class)</h2>
           <div className="space-y-3">
-            <Link to="/small-class/v1-1/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-orange-200 hover:shadow-md transition-shadow relative overflow-hidden group">
-              <div className="absolute right-0 top-0 bottom-0 w-2 bg-orange-600 group-hover:w-3 transition-all"></div>
+            <Link to="/small-class/v1.0/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-orange-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+              <div className="absolute right-0 top-0 bottom-0 w-2 bg-orange-500 group-hover:w-3 transition-all"></div>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-800 text-lg">v1.1 阶梯拼团奖</span>
-                <span className="bg-orange-50 text-orange-600 text-xs px-2 py-1 rounded font-bold">新上线</span>
+                <span className="font-bold text-gray-800 text-lg">拼团与积分</span>
+                <span className="bg-orange-50 text-orange-600 text-xs px-2 py-1 rounded font-bold">已更新</span>
               </div>
-              <p className="text-gray-500 text-xs mt-1">支持 2人/5人团动态梯度。主页由经典橘色升级为 Screenshot-style 棕色系，详情页保持橘色全胶囊按钮风格。</p>
-            </Link>
-
-            <Link to="/small-class/v1.0/group-buy" className="block bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden group">
-              <div className="absolute right-0 top-0 bottom-0 w-2 bg-gray-400 group-hover:w-3 transition-all"></div>
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-700">v1.0 基础普通版</span>
-                <span className="bg-gray-100 text-gray-500 text-xs px-2 py-1 rounded">稳定</span>
-              </div>
-              <p className="text-gray-400 text-xs mt-1">团长/团员积分动态展示机制，固定人数拼团模型。</p>
+              <p className="text-gray-500 text-xs mt-1">支持 2人/5人阶梯拼团逻辑，动态积分奖励机制，1:1 还原橘色/棕色双重设计规范。</p>
             </Link>
           </div>
         </div>

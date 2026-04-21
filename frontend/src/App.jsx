@@ -15,7 +15,6 @@ export default function App() {
         <Route path="/customer/v1.0" element={<CustomerV1_0 />} />
         <Route path="/referral/v1.0" element={<ReferralV1_0 />} />
         <Route path="/small-class/v1.0/group-buy" element={<GroupBuyV1_0 />} />
-        <Route path="/small-class/v1-1/group-buy" element={<GroupBuyV1_1 />} />
       </Routes>
     </Router>
   );
