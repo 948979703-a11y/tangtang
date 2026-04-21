@@ -71,6 +71,9 @@ export default function GroupBuy() {
   };
 
   const PointRewardsCard = ({ showMargin = true }) => {
+    // Safety check for production stability
+    if (!tiers || tiers.length === 0) return null;
+    
     if (pageView === 'course' && isTiered) {
       // Home Page - Tiered Mode (Based on the screenshot you provided)
       return (
