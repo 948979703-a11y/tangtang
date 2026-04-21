@@ -4,7 +4,6 @@ import CustomerV1_1 from './pages/customer-follow-up/v1_1/Index';
 import CustomerV1_0 from './pages/customer-follow-up/v1_0/Index';
 import ReferralV1_0 from './pages/referral/v1_0/Index';
 import GroupBuyV1_0 from './pages/small-class/v1_0/GroupBuy';
-import GroupBuyV1_1 from './pages/small-class/v1_1/GroupBuy';
 
 export default function App() {
   return (
