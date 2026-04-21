@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="app-container shadow-xl bg-gray-50 min-h-screen">
-      <header className="bg-gradient-to-r from-teal-500 to-indigo-600 p-6 text-white text-center rounded-b-3xl shadow-lg">
+      <header className="bg-gradient-to-r from-teal-500 to-indigo-600 p-6 text-white text-center rounded-b-3xl shadow-lg relative">
+        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-50">
+          <Link to="/small-class/v1-1/group-buy" className="bg-red-500 text-white px-6 py-2 rounded-full font-bold shadow-xl border-2 border-white whitespace-nowrap animate-bounce">
+            点此进入 1.1 预览 (强制入口)
+          </Link>
+        </div>
         <h1 className="text-2xl font-bold mb-2"><i className="fa fa-layer-group mr-2"></i>原型设计走廊 <span className="text-xs opacity-50 font-normal">(Build: 0421-Final)</span></h1>
         <p className="text-teal-100 text-sm">选择下方具体的项目模块与版本进行预览</p>
       </header>
